@@ -24,7 +24,7 @@ function App() {
     <FirstSection Appointment={emp.Appointment} Email={emp.Email} Phone={emp.Phone}></FirstSection>
     <SecondSection Status={emp.Status} Door={emp.Door} Time={emp.Time}></SecondSection>
     <div className='section3'>
-      <input type="checkbox"></input><img src={emp.profileImg}/>
+      <input type="checkbox"></input><img src={emp.profileImg} alt="img1"/>
       <h1>Boltarrt Bosbessen
       <p>Overheerlike Boltarrt uit de keuken ven de Bijenkrof.</p></h1>
       <div className='arrow'><button className='btn'>{arrow2}</button></div>
