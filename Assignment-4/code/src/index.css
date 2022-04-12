@@ -33,7 +33,7 @@
     color: #343434;
     font-size: 30px;
     line-height: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     vertical-align: top;
     cursor: pointer;
 }
@@ -41,7 +41,7 @@
 .PostImageWrapper img {
     max-height: 240px;
     display: block;
-    width:500px;
+    width: 500px;
 }
 
 .PostImageWrapper {
@@ -64,7 +64,7 @@
     float: right;
     margin-right: 100px;
     border: none;
-    transform:rotate(0deg) translateY(15px);
+    transform: rotate(0deg) translateY(15px);
 }
 
 .LikeShareContainer button {
@@ -85,4 +85,27 @@
     margin-bottom: 10px;
     width: 800px;
     margin-left: 250px;
+}
+
+
+.PostedOn {
+    text-align: right;
+    color: #8a8a8a;
+}
+
+.PostDetails>div {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 20px);
+    padding: 10px;
+}
+
+.Likes {
+    color: #8a8a8a;
+    padding-left: 8px;
+    font-size: 13px;
+}
+
+.PostCaption {
+    padding-left: 14px;
 }
