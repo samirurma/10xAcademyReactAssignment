@@ -9,10 +9,8 @@ const Postview=()=> {
 const [posts,setPosts]=useState([]);
 
 const setPostsAsync=async()=> {
-  const response=await fetch("http://localhost:3004/user");
-  // console.log(response)
-  const data=await response.json();
-  console.log(data)
+  const response=await fetch("http://localhost:3004/user"),
+  data=await response.json();
   setPosts(data);
 };
 
