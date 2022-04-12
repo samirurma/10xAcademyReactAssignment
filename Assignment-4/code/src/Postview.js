@@ -1,12 +1,38 @@
 import React from 'react';
-import './Postview.css';
+import { useState ,useEffect} from 'react';
+import Post from './Post/Post';
+import PhotoCameraIcon from '@mui/icons-material/PhotoCamera';
+import RadarIcon from '@mui/icons-material/Radar';
 
 
 const Postview=()=> {
+const [posts,setPosts]=useState([]);
+
+const setPostsAsync=async()=> {
+  const response=await fetch("http://localhost:3004/user");
+  // console.log(response)
+  const data=await response.json();
+  console.log(data)
+  setPosts(data);
+};
+
+useEffect(()=>{
+  setPostsAsync(); 
+},[]);
   return (
-    <div className="site-container">
+    <div>
+    <div className='header-container'>
+        <div className='left-side' ><span><RadarIcon/></span>Instaclone</div>
+        <div className='right-side'><PhotoCameraIcon/></div>
+      </div>
+    <div className="Postview">
+      
+      {posts.map((post,index)=>(
+          <Post key={index} config={post}/>
+      ))}
+    </div>
     </div>
   );
-}
+};
 
 export default Postview;
