@@ -26,7 +26,7 @@ useEffect(()=>{
     <div className="Postview">
       
       {posts.map((post,index)=>(
-          <Post key={index} config={post}/>
+          <Post key={index} post={post}/>
       ))}
     </div>
     </div>
