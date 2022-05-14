@@ -1,4 +1,4 @@
-const PostHeader = ({ config }) => {
+export const PostHeader = ({ config }) => {
     return (<div className="PostHeader">
         <div className="PostTitleWrapper">
         <div className="PostTitle">{config.name || ""}</div>
@@ -7,4 +7,4 @@ const PostHeader = ({ config }) => {
     <div className="PostAction">...</div>
     </div>)
 };
-export default PostHeader;
+// export default PostHeader;
